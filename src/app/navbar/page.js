@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -7,29 +8,29 @@ function Navbar() {
         <h1 className="text-xl font-bold">My Navbar</h1>
         <ul className="flex space-x-4 mt-2">
           <li>
-            <a href="/" className="text-white">
+            <Link href="/" className="text-white">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="text-white">
+            <Link href="/about" className="text-white">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/news" className="text-white">
+            <Link href="/news" className="text-white">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/login" className="text-white">
+            <Link href="/login" className="text-white">
               Login
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/todos" className="text-white">
+            <Link href="/todos" className="text-white">
               Todo List
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
